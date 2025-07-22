@@ -28,7 +28,7 @@ May be hosted later for access on a public domain (with access restrictions as n
 This app was made to help students like myself, but it’s not open to public contributions or modifications.  
 If you’re a Riphah student or teacher and would like to suggest improvements or find a bug, you can reach me via email:
 
-**ayesha.tabassum@riphah.edu.pk**
+**ayescapade@gmail.com**
 
 ## 📌 Important Note
 
