@@ -1,0 +1,43 @@
+{% load static %}
+<!-- base.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>{% block title %}Riphah GPA Calculator{% endblock %}</title>
+  <link rel="stylesheet" href="{% static 'styles.css' %}">
+</head>
+<body>
+  <header class="site-header">
+    <div class="logo-title">
+      <h1><a href="/">Riphah GPA Calculator</a></h1>
+    </div>
+  </header>
+
+  {% if not home_page %}
+  <div class="main-layout">
+    <main class="main-content">
+      <div class="container">
+        {% block content %}{% endblock %}
+      </div>
+    </main>
+
+    <aside class="sidebar">
+      <div class="reviews-panel">
+        <h3>Reviews</h3>
+        <p><em>Reviews coming soon... in the meantime,</em></p>
+        <p><em>Send feedback to: <b style="color: #4f46e5;">ayescapade@gmail.com</b></em></p>
+      </div>
+    </aside>
+  </div>
+  {% else %}
+  <div class="home-content">
+    {% block contents %}{% endblock %}
+  </div>
+  {% endif %}
+
+  <!-- <footer>
+    <p>&copy; 2025 GPA Calculator. Built with ❤️ for students.</p>
+  </footer> -->
+</body>
+</html>

@@ -1,0 +1,19 @@
+{% extends 'calculator/base.html' %}
+
+{% block content %}
+<section class="hero">
+  <div class="container">
+    <h1>Welcome to the Riphah GPA Calculator 🎓</h1>
+    <p class="tagline">Track your GPA, Semester-wise and Cumulative — easily and accurately.</p>
+    <p class="description">
+  Built for Riphah students to calculate GPA & CGPA accurately based on the university’s grading policy.
+  <br><small class="creator-note">Created with care by Ayesha Tabassum.</small>
+</p>
+    <div class="actions">
+      <a href="{% url 'gpa' %}" class="button">Calculate GPA</a>
+      <a href="{% url 'cgpa' %}" class="button">Calculate CGPA</a>
+    </div>
+  </div>
+</section>
+
+{% endblock %}

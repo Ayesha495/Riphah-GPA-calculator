@@ -1,0 +1,15 @@
+{% extends 'calculator/base.html' %}
+
+{% block content %}
+<h2>Enter Subject Marks and Credit Hours</h2>
+<form method="post">
+  {% csrf_token %}
+  {% for form in forms %}
+    <fieldset>
+        <h4>Subject {{ forloop.counter }}:</h4>
+      {{ form.as_p }}
+    </fieldset>
+  {% endfor %}
+  <button type="submit">Calculate GPA</button>
+</form>
+{% endblock %}

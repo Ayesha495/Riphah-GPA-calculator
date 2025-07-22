@@ -1,0 +1,11 @@
+{% extends 'calculator/base.html' %}
+
+{% block content %}
+<h2>GPA Calculator - Select Number of Subjects</h2>
+<form method="post">
+  {% csrf_token %}
+  {{ form.as_p }}
+  <button type="submit">Next</button>
+</form>
+
+{% endblock %}
