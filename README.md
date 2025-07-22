@@ -20,8 +20,7 @@ This application allows you to:
 
 ## 🚀 Deployment Plans
 
-Currently intended for personal/local use.  
-May be hosted later for access on a public domain (with access restrictions as needed).
+
 
 ## 📩 Feedback
 
