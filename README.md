@@ -13,11 +13,9 @@ This application allows you to:
 
 ## 🌐 Technology Stack
 
-- **HTML/CSS/JavaScript** – Frontend interface
+- **HTML/CSS** – Frontend interface
 - **Django** – Backend framework
-- **SQLite (optional, future)** – For storing review data (currently disabled)
-- **Responsive Design** – Mobile-friendly layout
-
+- **DTL** – Django Template Language
 ## 🚀 Deployment Plans
 
 
