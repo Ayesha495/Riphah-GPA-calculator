@@ -1,1 +1,1 @@
-web: gunicorn gpa_calculator.wsgi
+web: gunicorn GPACalculator.wsgi
