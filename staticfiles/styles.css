@@ -263,7 +263,7 @@ footer p {
   .sidebar {
     flex: 1;
     max-width: clamp(250px, 25vw, 300px);
-    order: 0;
+    order: 1; /* Sidebar after main content on larger screens */
   }
   
   .container {
@@ -300,6 +300,19 @@ footer p {
   .main-layout {
     padding: clamp(0.5rem, 2vw, 1rem);
     gap: clamp(0.75rem, 2.5vw, 1rem);
+  }
+  
+  .main-content {
+    order: 1; /* Main content first */
+  }
+  
+  .sidebar {
+    order: 2; /* Reviews panel below main content */
+    max-width: 100%;
+  }
+  
+  .reviews-panel {
+    position: static; /* Remove sticky positioning on mobile */
   }
   
   .hero {
