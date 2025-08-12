@@ -57,9 +57,9 @@ body {
 
 .container {
   flex: 1;
-  padding: 2.5rem;
-  max-width: 850px;
-  margin: 1.5rem auto;
+  padding: 1.5rem;
+  max-width: 100%;
+  margin: 0;
   background: white;
   box-shadow: 0 10px 30px var(--card-shadow);
   border-radius: 16px;
@@ -169,12 +169,13 @@ footer p {
   display: flex;
   flex: 1;
   flex-direction: column;
-  gap: 2rem;
-  padding: 2rem;
+  gap: 1rem;
+  padding: 1rem;
 }
 
 .main-content {
   flex: 1;
+  order: 1;
 }
 
 .sidebar {
@@ -252,16 +253,25 @@ footer p {
 @media (min-width: 768px) {
   .main-layout {
     flex-direction: row;
+    gap: 2rem;
+    padding: 2rem;
   }
   
   .main-content {
     flex: 2;
+    order: 0;
   }
   
   .sidebar {
     flex: 1;
     max-width: 300px;
     order: 0;
+  }
+  
+  .container {
+    padding: 2.5rem;
+    max-width: 850px;
+    margin: 1.5rem auto;
   }
   
   .reviews-panel {
